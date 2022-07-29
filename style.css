@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div .logo {
+  width: 130px;
+  cursor: pointer;
+}
+nav div .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav div .list .list-item {
+  position: relative;
+  margin: 0 25px;
+  font-size: 22px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+nav div .list .list-item.active {
+  font-size: 24;
+  font-weight: 700;
+}
+nav div .list .list-item.active::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 13px;
+  width: 50px;
+  height: 3px;
+  background: #000;
+}
+nav .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .button-group .search-icon svg {
+  margin: 0 15px;
+  width: 30px;
+}
+nav .button-group div button {
+  width: 150px;
+  height: 40px;
+  background: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #515050;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+.hero-container {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-container .hero-container-left {
+  position: relative;
+}
+.hero-container .hero-container-left .hero-image img {
+  width: 400px;
+}
+.hero-container .hero-container-left .square img {
+  width: 300px;
+  position: absolute;
+  bottom: -50px;
+  right: -70px;
+  z-index: -1;
+}
+.hero-container .hero-container-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-container .globe img {
+  position: absolute;
+  top: 150px;
+  right: 600px;
+  width: 60px;
+  z-index: -1;
+}
+.hero-container .star img {
+  position: absolute;
+  top: 200px;
+  right: 130px;
+  width: 50px;
+  z-index: -1;
+}
+.hero-container .hero-container-right .hero-heading {
+  margin: 10 0px 0 50px;
+  font-size: 55px;
+  font-family: "Orbitron", sans-serif;
+  text-align: right;
+}
+.hero-container .hero-container-right .hero-description {
+  margin-bottom: 80px;
+  width: 600px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.hero-container .hero-container-right div button {
+  margin: 0 5px 80px;
+  padding: 3px 25px;
+  background: none;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
+  border: 2px solid #000;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.hero-container .hero-container-right div button.button-join {
+  padding: 3px;
+  background: #000;
+  color: #fff;
+}
+.hero-container .hero-container-right .contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container .hero-container-right .contact-us .contact-heading {
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #515050;
+}
+.hero-container .hero-container-right .contact-us .icons span img {
+  margin: 0 10px;
+  width: 30px;
+}
+
+.hero-container .star2 img {
+  position: absolute;
+  bottom: 80px;
+  right: 750px;
+  width: 40px;
+}
